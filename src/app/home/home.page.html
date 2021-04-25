@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>DRINK.IO</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  
+  <ion-slides pager="true" [options]="slideOpts" *ngIf="cocktails.drinks">
+    <ion-slide *ngFor="let drink of cocktails.drinks" >
+    <ion-card >
+      
+        <ion-card-header>
+          <ion-card-subtitle>{{drink.strCategory}}</ion-card-subtitle>
+          <ion-card-title>{{drink.strDrink}}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content style="padding-bottom: 0px;">   
+          <ion-grid>
+            <ion-row>            
+          <img [src]="drink.strDrinkThumb" style="width:220px;height:220px;border-radius:8px;">
+            </ion-row>
+          <ion-row style="justify-content:center;margin-top: 10px;margin-bottom: 7px;">
+            <ion-icon name="heart-outline" class="like-button"></ion-icon>
+          </ion-row>
+          </ion-grid>
+        </ion-card-content>
+    
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+<ion-slides pager="true" [options]="slideOpts">
+  <ion-slide *ngFor="let teq of tequila.drinks">
+  <ion-card >
+    
+      <ion-card-header>
+        <ion-card-subtitle>{{teq.strCategory}}</ion-card-subtitle>
+        <ion-card-title>{{teq.strDrink}}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content style="padding-bottom: 0px;">   
+        <ion-grid>
+          <ion-row>
+            <img [src]="teq.strDrinkThumb" style="width:200px;height:200px;border-radius:8px;">
+          </ion-row>
+          <ion-row style="justify-content:center;margin-top: 10px;margin-bottom: 7px;">
+            <ion-icon name="heart-outline"  class="like-button"></ion-icon>
+          </ion-row>
+        </ion-grid>          
+        
+      </ion-card-content>
+  
+  </ion-card>
+</ion-slide>
+</ion-slides>
+<span routerLink='/search' >CIAOOOOO
+</span></ion-content>

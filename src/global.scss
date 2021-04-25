@@ -1,0 +1,61 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+*{
+    background:white;
+}
+ion-title{
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+    color: #74a4f1;
+    background-color: white;
+}
+ion-header{
+    box-shadow: 0 5px 3px -3px lightgray;
+}
+ion-searchbar{
+    background-color:none
+}
+ion-tabs,ion-tab-bar, ion-tab-button, .bottomButton{
+    background: #74a4f1;
+}
+.bottomButton{
+    color:white
+}
+ion-badge{
+    color:rgb(49, 49, 49)
+}
+ion-card{
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+}
+
+.like-button{
+    font-size:30px;
+    color:red
+}

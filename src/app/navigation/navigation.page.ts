@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ActivationStart, Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationPage {
 
-  constructor() { }
+  @ViewChild(RouterOutlet) outlet: RouterOutlet;
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
+  
   }
 
 }

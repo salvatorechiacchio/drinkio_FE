@@ -5,7 +5,7 @@
 </ion-header>
 <ion-content [fullscreen]="true">
   
-  <ion-slides pager="true" [options]="slideOpts" *ngIf="cocktails.drinks">
+  <ion-slides pager="true" [options]="slideOpts" *ngIf="cocktails">
     <ion-slide *ngFor="let drink of cocktails.drinks" >
     <ion-card >
       
@@ -28,7 +28,7 @@
     </ion-card>
   </ion-slide>
 </ion-slides>
-<ion-slides pager="true" [options]="slideOpts">
+<ion-slides pager="true" [options]="slideOpts" *ngIf="tequila">
   <ion-slide *ngFor="let teq of tequila.drinks">
   <ion-card >
     
@@ -52,5 +52,5 @@
   </ion-card>
 </ion-slide>
 </ion-slides>
-<span routerLink='/search' >CIAOOOOO
-</span></ion-content>
+
+</ion-content>

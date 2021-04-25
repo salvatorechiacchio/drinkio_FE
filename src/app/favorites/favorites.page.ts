@@ -2,17 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { UtilsService } from '../utils.service';
 
 @Component({
-  selector: 'app-like',
-  templateUrl: './like.page.html',
-  styleUrls: ['./like.page.scss'],
+  selector: 'app-favorites',
+  templateUrl: './favorites.page.html',
+  styleUrls: ['./favorites.page.scss'],
 })
-export class LikePage implements OnInit {
+export class FavoritesPage implements OnInit {
+
+  items = []
+  isItemAvailable = false
 
   constructor(
     private utils: UtilsService
   ) { }
-  items = []
-  isItemAvailable = false
 
   ngOnInit() {
     console.log(this.utils.like_cocktail)

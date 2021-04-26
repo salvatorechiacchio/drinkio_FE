@@ -16,8 +16,9 @@ export class FavoritesPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(this.utils.like_cocktail)
-    this.items = this.utils.like_cocktail
+    this.items.push(this.utils.like_cocktail)
+    console.log(this.items)
+    this.isItemAvailable = true
   }
 
 }

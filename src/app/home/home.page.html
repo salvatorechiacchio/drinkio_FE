@@ -10,7 +10,6 @@
     <ion-card >
       
         <ion-card-header>
-          <ion-card-subtitle>{{drink.strCategory}}</ion-card-subtitle>
           <ion-card-title>{{drink.strDrink}}</ion-card-title>
         </ion-card-header>
 
@@ -20,7 +19,7 @@
           <img [src]="drink.strDrinkThumb" style="width:220px;height:220px;border-radius:8px;">
             </ion-row>
           <ion-row style="justify-content:center;margin-top: 10px;margin-bottom: 7px;">
-            <ion-icon name="heart-outline" class="like-button"></ion-icon>
+            <ion-icon name="heart-outline" class="like-button" (click)="like(drink)"></ion-icon>
           </ion-row>
           </ion-grid>
         </ion-card-content>
@@ -33,7 +32,6 @@
   <ion-card >
     
       <ion-card-header>
-        <ion-card-subtitle>{{teq.strCategory}}</ion-card-subtitle>
         <ion-card-title>{{teq.strDrink}}</ion-card-title>
       </ion-card-header>
 
@@ -43,7 +41,7 @@
             <img [src]="teq.strDrinkThumb" style="width:200px;height:200px;border-radius:8px;">
           </ion-row>
           <ion-row style="justify-content:center;margin-top: 10px;margin-bottom: 7px;">
-            <ion-icon name="heart-outline"  class="like-button"></ion-icon>
+            <ion-icon name="heart-outline" (click)="like(teq)" class="like-button"></ion-icon>
           </ion-row>
         </ion-grid>          
         

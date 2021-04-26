@@ -29,8 +29,10 @@ export class SearchPage implements OnInit {
       })
        this.isItemAvailable = true;
     }
-     
-     }
+}
+searchItem(drink){
+  console.log(drink)
+}
 
     
 

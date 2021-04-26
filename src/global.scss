@@ -28,7 +28,9 @@
 *{
     background:white;
 }
-
+ion-icon{
+    background-color: transparent;
+}
 .tab-button{
     background: transparent !important;
     color: white;
@@ -43,9 +45,7 @@ ion-title{
 ion-header{
     box-shadow: 0 5px 3px -3px lightgray;
 }
-ion-searchbar{
-    background-color:none
-}
+
 ion-tabs,ion-tab-bar, ion-tab-button, .bottomButton{
     background: #74a4f1;
 }
@@ -64,4 +64,7 @@ ion-card{
 .like-button{
     font-size:30px;
     color:red
+}
+ion-card-header,ion-card-content{
+    padding: 5px  !important;
 }
